@@ -17,7 +17,7 @@ def netcat(hostname, port):
         data = repr(data)
         print("recieved : " + data)
         x = data.split(": ")
-        eq = x[1].split("\n")[0]
+        eq = x[1].split("\\n")[0]
         equation1 = eq.split("=")[0]
         equation2 = eq.split("=")[1]
         print(equation1 + " = " + equation2)
