@@ -1,0 +1,88 @@
+Image:
+  Filename: iceberg.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Mime type: image/jpeg
+  Class: DirectClass
+  Geometry: 1280x920+0+0
+  Units: Undefined
+  Colorspace: sRGB
+  Type: TrueColor
+  Base type: Undefined
+  Endianness: Undefined
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Pixels: 1177600
+    Red:
+      min: 0  (0)
+      max: 252 (0.988235)
+      mean: 35.3773 (0.138734)
+      standard deviation: 50.7968 (0.199203)
+      kurtosis: 3.76408
+      skewness: 2.0081
+      entropy: 0.770205
+    Green:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 103.818 (0.407131)
+      standard deviation: 47.4089 (0.185917)
+      kurtosis: -0.26085
+      skewness: 0.287692
+      entropy: 0.935917
+    Blue:
+      min: 15  (0.0588235)
+      max: 255 (1)
+      mean: 173.601 (0.680787)
+      standard deviation: 48.3531 (0.18962)
+      kurtosis: 0.0274363
+      skewness: -1.09102
+      entropy: 0.901348
+  Image statistics:
+    Overall:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 104.265 (0.408884)
+      standard deviation: 48.8529 (0.19158)
+      kurtosis: -1.33459
+      skewness: 0.101733
+      entropy: 0.869157
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Interlace: None
+  Intensity: Undefined
+  Compose: Over
+  Page geometry: 1280x920+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 70
+  Orientation: Undefined
+  Properties:
+    comment: https://www.youtube.com/watch?v=CAZ8kTQ49c8
+    date:create: 2022-09-30T22:37:33+00:00
+    date:modify: 2022-09-30T22:37:30+00:00
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: 05b5289570b3a282d277d9bf28e5cdf820fd884264dafe76adff700f1574eaf1
+  Artifacts:
+    filename: iceberg.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 201526B
+  Number pixels: 1177600
+  Pixels per second: 77.9161MB
+  User time: 0.020u
+  Elapsed time: 0:01.015
+  Version: ImageMagick 6.9.11-60 Q16 x86_64 2021-01-25 https://imagemagick.org
