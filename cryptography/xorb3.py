@@ -112,10 +112,10 @@ keys = [0xa93f9c6f,
 
 for key in keys:
     newFlag = xor(flag, bytearray(key.to_bytes(4, 'big')))
-
+    print(str(newFlag))
     #for i in range(9):
-    print(''.join('{:02x}'.format(x) for x in newFlag))
-    print('\n')
+    #print(''.join('{:02x}'.format(x) for x in newFlag))
     #flag = bytearray(b64encode(flag))
-    #newFlag = base64.b64decode(str(newFlag))
-    #print(str(newFlag))
+    newFlag = base64.b64decode(str(newFlag))
+    print(str(newFlag))
+    print('\n')

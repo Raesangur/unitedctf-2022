@@ -1,4 +1,5 @@
 import csv
+import base64
 
 xored = "]lOP>GH.@GX.Vx}o}f5H"
 
@@ -6,16 +7,16 @@ with open('dictionary.csv', newline='') as f:
     reader = csv.reader(f)
     data = list(reader)
 
-#print(data)
+
+res = xored.encode()
+print(res)
 
 for word in data:
-    x = xored.encode()
-    w = ''.join(word).encode()
 
-    res = ""
-    for i in range(min(len(x), len(w))):
-        res += chr(x[i] ^ w[i])
+    word = word[0].encode()
+    print(word)
+    print(res)
+    res = [a ^ b for a, b in zip(res, word)]
 
     
-    #res = xored.encode() ^ ''.join(word).encode()
     print(res)

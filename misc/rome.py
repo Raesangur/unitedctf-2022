@@ -13,11 +13,11 @@ def get_start_and_end(maze):
         if 'S' in maze[i]:
             for j in range(len(maze[i])):
                 if maze[i][j] == 'S':
-                    start = (i, j)      # y, x
+                    start = (i, j)
         if 'E' in maze[i]:
             for j in range(len(maze[i])):
                 if maze[i][j] == 'E':
-                    end = (i, j)        # y, x
+                    end = (i, j)
 
     #print(start)
     #print(end)
@@ -101,7 +101,8 @@ def netcat(hostname, port):
     # s.sendall(content)
 
     print("-----------------------------------------")
-    data = s.recv(1024)
+    data = s.recv(4096)
+    data += s.recv(4096)
     data = repr(data)
     #print("recieved : " + data)
     lines = data.split("\\n")
@@ -113,11 +114,14 @@ def netcat(hostname, port):
     return s, lines
 
 
-s, lines = netcat('nc.ctf.unitedctf.ca',5001)
+# receive packets
+s, lines = netcat('nc.ctf.unitedctf.ca',5002)
+
 maze = to_maze(lines)
 #print_maze(maze)
 
 endpoints = get_start_and_end(lines)
+
 
 matrix = create_matrix(maze, endpoints)
 #print_maze(matrix)
@@ -140,13 +144,10 @@ coords = coords[:-1]
 
 resp = ""
 for coord in coords:
-    #s.sendall((str(coord)+ "\r\n").encode())
-    #print(coord)
     resp += coord
-#resp = resp[:-2]
+
 resp += '.\n'
 print(resp)
-#s.sendall(".".encode())
 s.sendall(resp.encode())
 
 print("--------------------------------")

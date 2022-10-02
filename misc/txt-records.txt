@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> -t txt ctf.unitedctf.ca
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41450
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ctf.unitedctf.ca.		IN	TXT
+
+;; ANSWER SECTION:
+ctf.unitedctf.ca.	12	IN	TXT	"google-site-verification=RkxBRy00ZWVmMWI1M2JhMDlkZmQ3ZmRiNzAzN2I0ODg4Mzk3NzAK"
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Sat Oct 01 23:37:22 EDT 2022
+;; MSG SIZE  rcvd: 135
+
