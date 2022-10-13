@@ -1,4 +1,4 @@
-5# https://levelup.gitconnected.com/solve-a-maze-with-python-e9f0580979a1
+# https://levelup.gitconnected.com/solve-a-maze-with-python-e9f0580979a1
 import socket
 
 def print_maze(maze):

